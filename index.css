@@ -1,0 +1,155 @@
+/* ==========================================================================
+   NOTE DE TRANSMISSION — Page index.html et index.css
+   --------------------------------------------------------------------------
+   Cette page est une page d'accueil.
+
+   Volontairement sobre et sans artifice, elle est censée inciter davantage au
+   recueillement et à la réflexion qu'au charme d'un spectacle à venir. Notre 
+   bonheur de vous voir visiter ce site ne doit pas nous faire oublier sa 
+   fonction première de mémorial.  
+
+   En même temps qu'elle accueille, c'est la page source de c-lamennais et de
+   c-cocteau qui éclairent le ton et le contenu de l'ensemble.
+
+   Le titre n'est aucunement provocateur. Le mot "gloire" est synonyme 
+   d' "hommage", une acception assez éloignée d'un contexte militaire.   
+
+   ==========================================================================
+*/
+
+/* ==========================================================================
+   NOTE TECHNIQUE
+   --------------------------------------------------------------------------
+  Début des grandes difficultés nées du positionnement des blocs. Les 
+  définitions "relative" et "absolute" nous ont longtemps été incompréhensibles
+  sinon dans leur signification, du moins dans leur fonctionnement. 
+   ==========================================================================
+*/
+
+/* ======================================== */
+/* STYLES SPÉCIFIQUES A LA PAGE ACCUEIL     */
+/* ======================================== */
+ 
+
+        body {
+            position:relative;
+            display:flex;
+            font-family: Arial, sans-serif;
+            background-color: #E8DAEF;
+            margin: 0;
+            padding: 0;
+            border-radius: 30px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            }
+
+        
+        blockquote.citation-lamennais {
+            position:relative ;
+            margin-top: 60px;
+            width: 500px;
+            height: 300px;
+            display: block;
+            text-align: center;
+            font-style: italic;
+            font-size:12px;
+            padding: 20px;
+            background-color: #D7BDE2;
+            border-left: 5px double #7D3C98;
+            border-radius: 25px;
+            max-width: 800px;
+            color: #4A235A;
+            animation: fadeIn 2s ease-in-out;
+            }
+
+        .memorial {
+            position:relative;
+            font-size: 20px;
+            margin-top: 180px;
+            width: 600px;
+            height: 350px;
+            background-color: #6C3483;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 30px;
+            border: 8mm ridge rgba(211, 220, 50, 0.6);
+             }
+
+        blockquote.citation-cocteau {
+            position: relative;
+            display: block;
+            font-size: 1.2em;
+            color: #4A235A;
+            margin-top:100px;
+            margin-right: 100px; 
+            margin-bottom: 10px; 
+            margin-left: 100px;
+            padding: 10px;
+            border-left: 5px double #ccc;
+            border-radius: 30px;
+            background-color: #C39BD3;
+            animation: fadeIn 3s ease-in-out;
+            text-decoration: none;
+            }
+
+        footer {
+            position:relative;
+            width: 90%;
+            text-align: center;
+            border-radius: 30px;
+            padding: 3px;
+            background-color: #BB8FCE;
+            color: #4A235A;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            margin-bottom: 20px;
+            }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 6px 12px;
+            border: 1px solid #999;
+            border-radius: 8px; /* angles arrondis */
+            background-color: #A9CCE3; /* gris clair, plus doux que blanc */
+            color: #444;
+            font-weight: 500;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+        a:hover {
+            background-color: #e0dede; /* gris légèrement plus soutenu au survol */
+            color: #800000; /* rouge profond, comme une braise sous la cendre */
+            }
+
+        .bouton-suivant {
+            width: 100%;
+            text-align: right;
+            margin: 40px 20px 20px 0;
+            }
+
+        .bouton-suivant a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 16px 32px;
+            font-size: 1.4em;
+            font-weight: bold;
+            font-family: 'Georgia', serif;
+            border-radius: 12px;
+            background-color: #5DADE2; /* bleu affirmé */
+            color: white;
+            border: none;
+            box-shadow: 0 0 10px rgba(93, 173, 226, 0.6); /* halo bleu doux */
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            }
+
+        .bouton-suivant a:hover {
+            background-color: #3498DB; /* bleu profond au survol */
+            transform: scale(1.07);
+            box-shadow: 0 0 14px rgba(52, 152, 219, 0.8); /* halo renforcé */
+            }
+
+    
