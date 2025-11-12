@@ -1,0 +1,65 @@
+/* ========================================================= */
+/* Feuille de styles : p-vivants.css              */
+/* Créée le : 3 novembre 2025                                */
+/* Auteur : Bernard Bonnejean                                */
+/*                                                           */
+/* Vocation : page unique dédiée aux rescapés du 13 novembre,*/
+/*aux familles et amis, aux témoins directs et indirects touchés
+par les attentats
+Le script reste sur la page html correspondante : 
+         p-vivants.html
+                                                           */
+*/
+/* ========================================================= */
+
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fdf6e3;
+      font-family: 'Georgia', serif;
+      overflow: hidden;
+    }
+    h1 {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.8em;
+      background: rgba(255,255,255,0.95);
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .temoignage {
+  position: absolute;
+  width: 250px;
+  padding: 15px;
+  background: rgba(255,255,255,0.85);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  transform: rotate(var(--angle));
+  left: var(--x);
+  top: var(--y);
+  animation: chute 1s ease-out;
+}
+
+   
+    .source {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 10px;
+    }
+    @keyframes chute {
+      from { opacity: 0; transform: translateY(-50px) rotate(var(--angle)); }
+      to { opacity: 1; transform: rotate(var(--angle)); }
+    }
+
+
+ /* ==========================================================================
+  
+
+

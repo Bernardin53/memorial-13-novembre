@@ -1,0 +1,349 @@
+ 
+/* ==========================================================================
+   NOTE DE TRANSMISSION — Pages l-bataclan.html et p-l-bataclan-13-novembre.css
+   --------------------------------------------------------------------------
+   Cette page recense les noms, prénoms et âge de toutes les victimes tombées
+   en martyrs du terrorisme islamiques le vendredi 13 novembre 2015 au Bataclan.
+
+   Chacune des cellules appelle un fichier complet référencé v- dont nous reparlerons. 
+   
+   Théoriquement, les ornements prévus sur cette page-source ouvraient sur la 
+   cible n-notes.htlm (voir les pages p-referencements-URLs et n-notes.html). 
+
+   ==========================================================================
+*/
+
+/* ==========================================================================
+   NOTE TECHNIQUE
+   --------------------------------------------------------------------------
+  L'identité de chacune des victimes est présentée dans une cellule d'un tableau.
+  Notre objectif initial était d'illustrer ce tableau par l'insertion d'images, 
+  de textes encadrés et de dessins symboliques. Il s'agissait dans notre esprit
+  de renforcer notre hommage par une ornementation esthétique digne de nos ami(e)s.
+
+  Le fait est que nous avons échoué et nous en sommes terriblement désolé. 
+
+  Cette page présente donc un caractère inachevé dont nous ne sommes pas fier. 
+  Nous ne resterons pas sur cet échec et nous prenons l'engagement d'y revenir.  
+   ==========================================================================
+*/
+
+/* ================================================= */
+/* STYLES SPÉCIFIQUES A LA PAGE VICTIMES DU BATACLAN */
+/* ================================================= */
+
+
+ body 
+        {
+            font-family: Arial, sans-serif;
+            background: radial-gradient(circle, #00fffb, #0000ff);
+
+
+             
+        }
+        
+  h1    {  
+      font-size: 50px;  
+        }
+
+.titre-memorial {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+
+
+
+.grille {
+  display:grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 1em;
+  row-gap:2em;
+  width: 80%;
+  max-height: 80%;
+  margin: 0 auto;
+
+}
+
+
+
+
+.cellule {
+  width: 110px; /* légèrement élargi pour plus de confort */
+  height: 110px;
+  margin: 0 auto;
+  text-align: center;
+  border: 3px solid #8b0000; /* rouge sombre, très lisible */  
+  border-radius: 10px;
+  padding: 10px 25px;
+  background-color: #fdf6e3; /* ton parchemin doux */
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15); /* ombre discrète */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.padding-bleu {
+  background-color: #0011aa;
+}
+
+.padding-cyan {
+  background-color: #00ffee;
+}
+
+
+
+.espace {
+  grid-column: span 11;
+  height: 2em;
+}
+
+
+
+
+
+a:link, a:visited {
+  background-color: #fdf6e3; /* ton parchemin doux */
+  color: #6b1e1e; /* rouge profond, évocateur */
+  border: 2px solid #a52a2a; /* brun rouge, comme une relique */
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+a:hover, a:active {
+  background-color: #fff0c2; /* lumière dorée */
+  color: #b22222; /* rouge feu */
+  transform: scale(1.05);
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+}
+
+
+.albertini 
+  { grid-column: 1; grid-row: 1; transform: translateX(70%)}
+.amiot
+  { grid-column: 3; grid-row: 1; transform: translateX(70%)}   
+.bouffard
+  { grid-column: 9; grid-row: 1; transform: translateX(-65%)}
+.barreau
+  { grid-column: 7; grid-row: 1; transform: translateX(-65%)}
+
+  .alexander
+  { grid-column: 2; grid-row: 2; transform: translateX(25%)}
+  .ayad
+  { grid-column: 4; grid-row: 2; transform: translateX(-10%)}
+  .bonnet
+  { grid-column: 6; grid-row: 2; transform: translateX(15%)}
+  .boulenger
+  { grid-column: 8; grid-row: 2; transform: translateX(-15%)}
+
+  .breuil
+  { grid-column: 2; grid-row: 3; transform: translateX(35%) }
+  .camax
+  { grid-column: 4; grid-row: 3; transform: translateX(-17%)}
+  .chevreau
+  { grid-column: 6; grid-row: 3; transform: translateX(35%)}
+  .classeau
+  { grid-column: 8; grid-row: 3; transform: translateX(-35%)}
+
+  .correia
+  { grid-column: 1; grid-row: 4; transform: translateX(60%) }
+  .delplace
+  { grid-column: 3; grid-row: 4; transform: translateX(-38%) }
+  .deperreti
+  { grid-column: 5; grid-row: 4; }
+  .denuit
+  { grid-column: 7; grid-row: 4; transform: translateX(52%)}
+  .detoc
+  { grid-column: 9; grid-row: 4; transform: translateX(-52%)}
+
+  .dogan
+  { grid-column: 5; grid-row: 5; }
+
+  .dubois
+  { grid-column: 4; grid-row: 6; }
+  .dunet
+  { grid-column: 6; grid-row: 6; }
+
+  .duperron
+  { grid-column: 3; grid-row: 7; }
+  .dymarski
+  { grid-column: 7; grid-row: 7; }
+
+  .ferey
+  { grid-column: 3; grid-row: 8; }
+  .garrigues
+  { grid-column: 7; grid-row: 8; }
+
+  .fosse
+  { grid-column: 4; grid-row: 9; }
+  .foultier
+  { grid-column: 6; grid-row: 9; }
+
+  .giroud
+  { grid-column: 1; grid-row: 10; }
+  .gomet
+  { grid-column: 5; grid-row: 10; }
+  .galisson
+  { grid-column: 9; grid-row: 10; }
+
+  .gonzales
+  { grid-column: 2; grid-row: 11; transform: translateX(-20%) }
+  .gregoire
+  { grid-column: 3; grid-row: 11; transform: translateX(-20%) }
+  .gomet
+  { grid-column: 5; grid-row: 11; }
+  .garrido
+  { grid-column: 7; grid-row: 11; transform: translateX(20%) }
+  .guyomardpy
+  { grid-column: 8; grid-row: 11; transform: translateX(20%) }
+
+  .guyomard
+  { grid-column: 3; grid-row: 12; transform: translateX(53%) }
+  .gaubert
+  { grid-column: 4; grid-row: 12; transform: translateX(53%) }
+  .hauducoeur
+  { grid-column: 6; grid-row: 12; transform: translateX(-53%) }
+  .henninot
+  { grid-column: 7; grid-row: 12; transform: translateX(-53%) }
+
+  .henry
+  { grid-column: 4; grid-row: 13; }
+  .hoche
+  { grid-column: 5; grid-row: 13; }
+  .innocenti
+  { grid-column: 6; grid-row: 13; }
+
+  .jardin
+  { grid-column: 4; grid-row: 14; }
+  .jouanneau
+  { grid-column: 5; grid-row: 14; }
+  .jozic
+  { grid-column: 6; grid-row: 14; }
+
+  .kircheim
+  { grid-column: 4; grid-row: 15; }
+  .gomet
+  { grid-column: 5; grid-row: 15; }
+  .lauraine
+  { grid-column: 6; grid-row: 15; }
+
+  .lausch
+  { grid-column: 3; grid-row: 16; }
+  .leguen
+  { grid-column: 7; grid-row: 16; }
+
+  .leclerc
+  { grid-column: 3; grid-row: 17; }
+  .lellouche
+  { grid-column: 7; grid-row: 17; }
+
+  .martin
+  { grid-column: 3; grid-row: 18; }
+  .mary
+  { grid-column: 4; grid-row: 18; }
+  .mauduit
+  { grid-column: 6; grid-row: 18; }
+  .minot
+  { grid-column: 7; grid-row: 18; }
+
+  .merlin
+  { grid-column: 1; grid-row: 19; }
+  .minvielle
+  { grid-column: 5; grid-row: 19; }
+  .misse
+  { grid-column: 9; grid-row: 19; }
+
+  .mosser
+  { grid-column: 3; grid-row: 20; }
+  .mourier
+  { grid-column: 4; grid-row: 20; }
+  .mutez
+  { grid-column: 6; grid-row: 20; }
+  .muyal
+  { grid-column: 7; grid-row: 20; }
+
+  .naufle
+  { grid-column: 4; grid-row: 21; }
+  .navarret
+  { grid-column: 5; grid-row: 21; }
+  .neuet
+  { grid-column: 6; grid-row: 21; }
+
+  .ouzounian
+  { grid-column: 4; grid-row: 22; }
+  .perchirin
+  { grid-column: 5; grid-row: 22; }
+  .pitiot
+  { grid-column: 6; grid-row: 22; }
+
+  .prenat
+  { grid-column: 1; grid-row: 23; }
+  .prevost
+  { grid-column: 4; grid-row: 23; }
+  .pumir
+  { grid-column: 6; grid-row: 23; }
+  .rammant
+  { grid-column: 9; grid-row: 23; }
+
+  .ribet
+  { grid-column: 2; grid-row: 24; }
+  .rouat
+  { grid-column: 4; grid-row: 24; }
+  .rousse
+  { grid-column: 6; grid-row: 24; }
+  .ruiz
+  { grid-column: 8; grid-row: 24; }
+
+  .sadin
+  { grid-column: 2; grid-row: 25; }
+  .salines
+  { grid-column: 4; grid-row: 25; }
+  .sanmartin
+  { grid-column: 6; grid-row: 25; }
+  .sarrade
+  { grid-column: 8; grid-row: 25; }
+
+  .sebaa
+  { grid-column: 3; grid-row: 26; }
+  .serrault
+  { grid-column: 4; grid-row: 26; }
+  .silva
+  { grid-column: 6; grid-row: 26; }
+  .solesin
+  { grid-column: 7; grid-row: 26; }
+
+  .stech
+  { grid-column: 4; grid-row: 27; }
+  .thome
+  { grid-column: 5; grid-row: 27; }
+  .vernadal
+  { grid-column: 6; grid-row: 27; }
+
+  .maitrot
+  { grid-column: 4; grid-row: 28; }
+  .theiller
+  { grid-column: 5; grid-row: 28; }
+  .derorthais
+  { grid-column: 6; grid-row: 28; }
+
+  .zschoche
+  { grid-column: 5; grid-row: 29; }
+
+
+@media (max-width: 600px) {
+  .grille {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+}
+
+
