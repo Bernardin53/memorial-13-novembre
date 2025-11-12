@@ -1,0 +1,86 @@
+ /* ========================================================= */
+/* Feuille de styles : n-notes-13-novembre.css              */
+/* Créée le : 14 octobre 2025                                */
+/* Auteur : Bernard Bonnejean                                */
+/*                                                           */
+/* Vocation : centraliser les styles de la page consacrée aux*/
+/* notes complémentaires. dont la fonction est d'apporter 
+/* informations, éclaircissements, voire opinion.          
+/* 
+*/
+/* ========================================================= */
+
+/* ==========================================================================
+   NOTE DE TRANSMISSION — Fichier notes
+   --------------------------------------------------------------------------
+   Cette feuille centralise les styles appliqués au fichier n-notes.html.
+   Ces notes ont la fonction d'apporter 
+/* informations, éclaircissements, voire opinions et avis, 
+lorsque l'auteur l'a jugé utile. Leur unique but est donc pédagogique.  
+
+   ==========================================================================
+*/
+
+
+/* ======================================== */
+/* STYLES SPÉCIFIQUES A LA PAGE D'ADIEU */
+/* ======================================== */
+
+
+        
+        body
+        {font-family: Arial, sans-serif;
+        background-color: #DFF2FF;
+        }
+        .h1
+        {color:darkblue;}
+
+        .texte
+        {
+        font-family:EB Garamond;
+        border-style: groove;
+        border-color: blueviolet;
+        border-radius: 10px;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5); 
+        padding: 30px;
+        margin-left:100px;
+        background: skyblue;
+        color:darkblue;
+        font-size:18px;
+        text-align: justify;
+        text-indent: 1em;
+        width:900px;
+
+    }
+    
+    .psaume {
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    background: skyblue;
+    column-count: 3;
+    column-width: 200px; /* largeur raisonnable pour du texte */
+    column-gap: 20px;
+    word-break: break-word; /* plus doux que break-all */
+}
+
+.psaume p {
+    margin: 5px;
+    text-align: center;
+}
+
+.psaume h3 {
+    column-span: all; /* fonctionne uniquement avec certaines implémentations */
+    text-align: center;
+}
+
+hr.separateur {
+  border: none;
+  height: 1px;
+  background-color: #ccc; /* gris doux */
+  margin: 30px 0;
+  opacity: 0.5;
+}
+
+
+   

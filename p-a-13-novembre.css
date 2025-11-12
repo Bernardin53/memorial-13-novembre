@@ -1,0 +1,328 @@
+
+
+
+/* ==========================================================================
+   NOTE DE TRANSMISSION — Pages p-a-13-novembre.css et a-auteur.html
+   --------------------------------------------------------------------------
+   Cette page mentionne l’auteur du projet, en attendant d’élargir la liste
+   à toutes celles et ceux — journalistes, témoins, passeurs, littérateurs — qui ont contribué
+   au mémorial.
+
+   Le titre de la page « Qui es-tu ? », dont le titre est emprunté à l'ouvrage de Paul Claudel
+   paru chez Gallimard en 1924, indique sa fonction : apprendre à connaître l'auteur du projet 
+   par le biais du paysage urbain, hautement symbolique, qu'il est amené à contempler chaque fois qu'il 
+   regarde par la fenêtre. 
+
+   Cette page ne vise ni l’exhaustivité ni la mise en avant, mais la clarté.
+
+   Les 3 liens externes renvoient à un excellent site : https://monumentum.fr dont la fonction 
+   est ainsi annoncée : Monumentum reprend depuis 2012 l'intégralité de la liste officielle
+   des Monuments Historiques français (base Mérimée), qu'ils soient classés ou inscrits 
+   et vous propose leur localisation précise sur un système de cartes, 
+   photos aériennes et plans cadastraux, ceci grâce à leurs coordonnées GPS. 
+
+   ==========================================================================
+*/
+
+/* ==========================================================================
+   NOTE TECHNIQUE
+   --------------------------------------------------------------------------
+  Aucune difficulté majeure insurmontable, à part celle qui nous a accompagné 
+  tout au long du projet : le positionnement des blocs et des images. La photo 
+  a été prise par l'auteur et lui appartient. Les fonctions hover overlay, bien que
+  requerrant une maîtrise certaine, sont bien expliquées sur le web. 
+   ==========================================================================
+*/
+
+/* ======================================== */
+/* STYLES SPÉCIFIQUES A LA PAGE AUTEURS     */
+/* ======================================== */
+
+
+        body {
+            position:relative;
+            display:flex;
+            font-family: Arial, sans-serif;
+            background-color: #E8DAEF;
+            margin: 0;
+            padding: 0;
+            border-radius: 30px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            }
+
+         h1, h2 {
+            font-family: 'Georgia', serif;
+            letter-spacing: 1px;
+            color: #4A235A; /* violet profond */
+            }
+
+
+        blockquote.intro-page {
+            position:relative ;
+            margin-top: 50px;
+            width: 900px;
+            height: auto;
+            display: block;
+            text-align: justify;
+            font-style: italic;
+            font-size:12px;
+            padding: 20px;
+            background-color: #D7BDE2;
+            border-left: 5px double #7D3C98;
+            border-radius: 25px;
+            max-width: 900px;
+            color: #4A235A;
+            margin-left: auto;
+            margin-right: auto;
+
+            }
+
+    
+          .vueDeLaval {
+            position: relative;
+            height: 350px;
+            width: 900px;
+            margin: 50px auto; /* centrage horizontal */
+            }
+
+            
+
+
+        blockquote.explication-cathedrale {
+            position:relative ;
+            margin-top: 70px;
+            width: 700px;
+            height: auto;
+            display: block;
+            text-align: justify;
+            font-size:12px;
+            padding: 20px;
+            background-color: #C39BD3;
+            border-left: 5px double #7D3C98;
+            border-radius: 25px;
+            max-width: 900px;
+            color: #4A235A;
+            margin-left: auto;
+            margin-right: auto;
+
+        } 
+        blockquote.explication-chateau {
+            position:relative ;
+            margin-top: 70px;
+            width: 700px;
+            height: auto;
+            display: block;
+            text-align: justify;
+            font-size:12px;
+            padding: 20px;
+            background-color: #C39BD3;
+            border-left: 5px double #7D3C98;
+            border-radius: 25px;
+            max-width: 900px;
+            color: #4A235A;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        blockquote.explication-tribunal {
+            position:relative ;
+            margin-top: 70px;
+            width: 700px;
+            height: auto;
+            display: block;
+            text-align: justify;
+            font-size:12px;
+            padding: 20px;
+            background-color: #C39BD3;
+            border-left: 5px double #7D3C98;
+            border-radius: 25px;
+            max-width: 900px;
+            color: #4A235A;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+
+        .conclusion {
+          position: relative;
+          width: 580px;
+          height: auto;
+          display: block;
+          text-align: center;
+          font-size:12px;
+          font-style: italic;
+          padding: 20px;
+          background-color: #D7BDE2;
+          border-left: 5px double #7D3C98;
+          border-radius: 25px;
+          color: #4A235A;
+          margin-left: auto;
+          margin-right: auto;
+
+        }
+
+.conteneur {
+            max-width: 360px;
+            margin: 50px auto;
+            }
+     
+.overlay.cathedrale {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 140, 186, 0.85); /* bleu doux et solennel */
+  transition: height 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.conteneur:hover .overlay.cathedrale {
+  height: 100%;
+}
+
+.text.cathedrale {
+  opacity: 0;
+  transition: opacity 1.2s ease;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.conteneur:hover .text.cathedrale {
+  opacity: 1;
+}
+
+.text.cathedrale a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.text.cathedrale a:hover {
+  text-decoration: none;
+}
+
+.conteneur.chateau {
+            max-width: 360px;
+            margin: 50px auto;
+            }
+
+
+.overlay.chateau {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(0, 140, 186, 0.85);
+  transition: width 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteneur:hover .overlay.chateau {
+  width: 100%;
+}
+
+.text.chateau {
+  opacity: 0;
+  transition: opacity 1.2s ease;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.conteneur:hover .text.chateau {
+  opacity: 1;
+}
+
+.text.chateau a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.text.chateau a:hover {
+  text-decoration: none;
+}
+
+.conteneur.tribunal {
+            max-width: 360px;
+            margin: 50px auto;
+            }
+
+
+
+.overlay.tribunal {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(0, 140, 186, 0.85);
+  transition: width 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conteneur:hover .overlay.tribunal {
+  width: 100%;
+  right: 0;
+}
+
+.text.tribunal {
+  opacity: 0;
+  transition: opacity 1.2s ease;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.conteneur:hover .text.tribunal {
+  opacity: 1;
+}
+
+.text.tribunal a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.text.tribunal a:hover {
+  text-decoration: none;
+}
+
+.volet {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Ajuste les largeurs selon la photo réelle */
+.volet.cathedrale {
+  left: 0;
+  width: 33.33%;
+}
+.volet.chateau {
+  left: 33.33%;
+  width: 33.33%;
+}
+.volet.tribunal {
+  left: 66.66%;
+  width: 33.33%;
+}
+

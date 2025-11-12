@@ -1,0 +1,156 @@
+/* ========================================================= */
+/* Feuille de styles : p-13-novembre.css              */
+/* Créée le : 14 octobre 2025                                */
+/* Auteur : Bernard Bonnejean                                */
+/*                                                           */
+/* Vocation : harmoniser les styles des pages du mémorial    */
+/*            tout en respectant leur spécificité symbolique */
+/*                                                           */
+/* Convention :                                              
+     - Styles communs en tête
+     - Sections spécifiques : victimes (v), auteurs (a), pages (p)
+     - Commentaires explicites pour chaque bloc
+     - Validation rigoureuse avant toute modification en lot
+*/
+/* ========================================================= */
+
+/* ========================================================= */
+/* STYLES COMMUNS À TOUS LES TYPES DE FICHIERS  */
+/* ========================================================= */
+
+/* [13 novembre 2025] Titres identitaires — communs à toutes les pages */
+
+.titre-memorial {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 50px;
+  }
+
+.sous-titre-memorial{
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 0.5em;
+  font-size: 30px;
+                }
+
+ /* ==========================================================================
+   MÉMO TECHNIQUE — Pièges rencontrés lors de la série c-
+   --------------------------------------------------------------------------
+   Ces erreurs, répétées,  ont été identifiées et corrigées avec vigilance :
+
+   1. Orthographe incorrecte de la propriété "height"
+      → Erreur fréquente : "heigth" (inversion des lettres)
+      → Impact : règle ignorée, mise en page altérée
+
+   2. Accolades de fermeture
+      → Oubli de } : provoque une cascade d’erreurs
+      → Accolade doublée : rend le CSS illisible ou invalide
+
+   Ce mémo est destiné à prévenir leur réapparition dans les séries suivantes.
+   Il témoigne de la rigueur apportée à chaque correction.
+   ==========================================================================
+*/
+
+ /* ==========================================================================
+  FEUILLE DE STYLE RESPONSIVE DE BASE POUR TOUS LES FICHIERS ADAPTATIFS
+   --------------------------------------------------------------------------
+/* 1. Réinitialisation légère */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Typographie de base */
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  background-color: #fff;
+  color: #222;
+  padding: 1rem;
+}
+
+/* 3. Conteneur principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* 4. Grille flexible */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.col {
+  flex: 1 1 100%;
+}
+
+/* 5. Navigation */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #eee;
+  padding: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0.5rem;
+}
+
+/* 6. Images fluides */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 7. Tableaux adaptatifs */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+th, td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* 8. Media queries pour adaptabilité */
+@media screen and (min-width: 600px) {
+  .col-md {
+    flex: 1 1 48%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .col-lg {
+    flex: 1 1 30%;
+  }
+
+  nav {
+    justify-content: flex-start;
+  }
+
+  nav a {
+    margin-right: 1rem;
+  }
+}
+
+:focus {
+  outline: 2px solid #005fcc;
+  outline-offset: 2px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+

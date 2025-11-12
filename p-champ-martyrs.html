@@ -1,0 +1,103 @@
+/* ==========================================================================
+   NOTE DE TRANSMISSION — Pages p-champ-martyrs.html 
+   p-champ-martyrs-13-novembre.css et p-script-champ-martyrs.js
+   --------------------------------------------------------------------------
+   La page intitulée "champ des martyrs" peut être appelée "page menu", par sa fonction.
+
+   Comme indiqué précédemment elle insiste sur le rôle essentiel que nous 
+   entendons donner au prêtre catholique, le père Jacques Hamel, assassiné lui-aussi
+   par des terroristes islamistes. Cependant, notre but n'est certainement pas de 
+   hiérarchiser les martyres.
+
+    Le "menu" proprement dit est à la fois un répertoire de tous les lieux du massacre
+    et par le biais des liens un appel vers toutes les victimes classées sur deux pages : 
+   l-bataclan (les victimes du Bataclan) et l-autres (c'est-à-dire le stade de France, les terrasses dont les noms 
+   figurent dans un sous-répertoire en fenêtre intérieure et le domicile privé).
+
+
+
+   ==========================================================================
+*/
+
+/* ==========================================================================
+   NOTE TECHNIQUE
+   --------------------------------------------------------------------------
+  La difficulté majeure a consisté dans la présentation claire, précise et,
+  nous l'espérons, élégante du menu. Nous avons beaucoup été aidé par des renseignements
+  glanés sur Internet et par Copilot. Ce n'est pas parfait, mais nous y retravaillerons
+  très certainement
+   ==========================================================================
+*/
+
+/* ================================================== */
+/* STYLES SPÉCIFIQUES A LA PAGE CHAMP DES MARTYRS     */
+/* ================================================== */
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Champ des Martyrs</title>
+  <link rel="stylesheet" href="p-13-novembre.css">
+  <link rel="stylesheet" href="p-champ-martyrs-13-novembre.css">
+  <script src="p-script-champ-martyrs.js" defer></script>
+</head>
+
+<body class="page-champ-martyrs">
+
+  <h1 class="titre-memorial">CHAMP<br>des<br>MARTYRS</h1>
+
+  <div class="pere-hamel">
+    <h2>Sous le patronage du<br>
+      <a href="c-hamel.html" class="lien-memorial">Père Jacques Hamel</a>
+    </h2>
+    <img src="ph-hamel-portrait-entier.jpg" alt="Portrait du Père Jacques Hamel" style="width:750px; height:800px;">
+  </div>
+
+  <h2 class="sous-titre-memorial">LIEUX DE MÉMOIRE</h2>
+
+  <div class="fenetre-menu">
+
+
+
+    <h1>
+      <a href="#menu" class="lien-memorial texte-centre">&nbsp;&nbsp;LISTE<br><br>&emsp;des<br><br>VICTIMES</a>
+    </h1>
+
+    <div class="fenetre-memoire" id="menu">
+      <div class="content">
+        <ul class="main-list" style="list-style: none; padding-left: 0;">
+          <li class="main-item"><a href="l-autres.html#stade" class="lien-memorial">STADE DE FRANCE</a></li>
+          <li class="main-item"><a href="l-bataclan.html" class="lien-memorial">BATACLAN</a></li>
+          <li class="main-item">
+
+            <p>
+              <div id="terrasses">
+</div>
+              <a href="#terrasses" id="toggleTerrasses" class="lien-memorial">
+    <strong>TERRASSES (cliquez)</strong>
+  </a>
+</p>
+
+<div id="subPopup" style="display: none;">
+  <ul style="list-style: none; padding-left: 0;">
+    <li><a href="l-autres.html#equipe" class="lien-memorial">La Belle Équipe</a></li>
+    <li><a href="l-autres.html#cambodge" class="lien-memorial">Le Petit Cambodge</a></li>
+    <li><a href="l-autres.html#carillon" class="lien-memorial">Le Carillon</a></li>
+    <li><a href="l-autres.html#biere" class="lien-memorial">La Bonne Bière</a></li>
+    <li><a href="l-autres.html#cosa" class="lien-memorial">La Cosa Nostra</a></li>
+  </ul>
+</div>
+
+          </li>
+          <li class="main-item"><a href="l-autres.html#domicile" class="lien-memorial">DOMICILE PRIVÉ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+

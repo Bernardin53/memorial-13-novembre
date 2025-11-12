@@ -1,0 +1,222 @@
+/* ========================================================= */
+/* Feuille de styles : p-champ-martyrs-13-novembre.css            
+/* Auteur : Bernard Bonnejean                                */
+/*                                                           */
+/* Vocation : centraliser les styles de la page p-champ-martyrs
+   qui constitue le menu principal ouvrant sur les pages l-bataclan
+   et l-autres ainsi qu'à c-hamel dont le sujet est le père Jacques 
+   Hamel parrain du site
+/* ========================================================= */
+
+/* ======================================== */
+/* STYLES PROPRES A LA PAGE CHAMP DES MARTYRS */
+/* ======================================== */
+        
+
+body {
+            position:relative;
+            display:flex;
+            background-color: #E8DAEF;
+            margin: 0;
+            padding: 0;
+            border-radius: 30px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            }
+
+            h1, h2 {
+  font-family: 'Georgia', serif;
+  letter-spacing: 1px;
+  color: #4A235A; /* violet profond */
+}
+
+.pere-hamel h2 {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #4A235A;
+  margin-bottom: 1em;
+}
+
+
+.pere-hamel img {
+	    margin: 0 auto;
+        display:block;
+        margin-top: 0; /* Adjust margin as needed */
+            
+            
+        }
+
+.lien-memorial {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 8px 0;
+    background-color: #EAECEE; /* gris clair, doux et respectueux */
+    color: #4A235A; /* violet profond, évocateur */
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* halo discret */
+    transition: all 0.3s ease;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+
+        a {
+            color: black; /* Couleur du lien */
+            text-decoration: none; /* Supprime le soulignement */
+        }
+        a:hover {
+            color: #A569BD; /* Couleur au survol */
+            text-decoration: none;
+            font-size: 150%;
+        }
+        a:active {
+            color:#A569BD; /* Couleur lorsque le lien est cliqué */
+            text-decoration: none; /* Supprime le soulignement */
+        }
+        a:visited {
+            color: #A569BD; /* Couleur des liens visités */
+            text-decoration: none; /* Supprime le soulignement */
+        }
+
+        
+       .fenetre-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* pour empiler le contenu verticalement */
+    align-items: flex-end; /* aligne le contenu à droite dans le bloc */
+    margin-right: 70px; /* marge droite */
+    margin-top: 60px; /* marge supérieure */
+    transform: translateX(30px); 
+    width: 240px; /* largeur fixe ou en % */
+    min-height: 340px;
+    border-radius: 30px;
+    background: #D2D4DE;
+    font-family: 'Helvetica Neue', sans-serif;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+.texte-centre {
+display: flex;
+align-items: center; /* Centre verticalement */
+justify-content: center; /* Optionnel : centre horizontalement */
+height: 500px; /* Hauteur du conteneur */
+border: 1px solid #000;
+}
+
+ 
+
+
+        h1 a {
+            font-size: 40px;
+            color: #4A235A;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        
+
+        .fenetre-memoire {
+            position:relative;
+            display: none;
+            box-shadow: 0px 6px 8px rgba(19, 19, 19, .7);
+        }
+
+        .fenetre-memoire:target {
+            display: flex;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fenetre-memoire .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%; /* largeur pleine du conteneur */
+    height: 0; /* départ invisible */
+    color: white;
+    background-color: #9B59B6;
+    animation: grow 2.5s ease forwards;
+    text-align: center;
+    overflow: hidden; /* évite les débordements pendant l’animation */
+    border-radius: 20px; /* optionnel, pour adoucir */
+}
+
+
+/* ============================= */
+/* Animations : définitions     */
+/* ============================= */
+
+/* Apparition progressive */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Croissance en hauteur */
+@keyframes grow {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 100%;
+    opacity: 1;
+  }
+}
+
+/* ============================= */
+/* Animations : application      */
+/* ============================= */
+
+/* Élément apparaissant en fondu */
+.element {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+/* Section qui se déploie verticalement */
+.section {
+  animation: grow 0.8s ease-out forwards;
+}
+
+        
+.retrait-gauche /* pour la liste des terrasses */
+        {
+            margin-left: 20px; /* Ajustez la valeur selon vos besoins */
+        }
+
+        .fenetre-memoire p {
+            padding: 50px;
+            opacity: 0;
+            animation: 1s fadeIn ease forwards 1s;
+        }
+
+
+
+.fenetre-memoire .close:after {
+            right: 0;
+            top: 0;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            display: flex;
+            z-index: 1;
+            font-size: 20px;
+            align-items: center;
+            justify-content: center;
+            background-color:#BF2E97;
+            color: #fff;
+            margin-left: 700px; /* pousse le bloc vers la droite */
+            cursor: pointer;
+            opacity: 0; 
+            animation: 1s fadeIn ease forwards .5s;
+        }

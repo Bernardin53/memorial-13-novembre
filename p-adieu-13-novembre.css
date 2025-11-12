@@ -1,0 +1,131 @@
+ 
+       /* ========================================================= */
+/* Feuille de styles : p-adieu-13-novembre.css              */
+/* Créée le : 14 octobre 2025                                */
+/* Auteur : Bernard Bonnejean                                */
+/*                                                           */
+/* Vocation : centraliser les styles de la dernière page du mémorial    */
+/*          
+/* 
+*/
+/* ========================================================= */
+
+/* ==========================================================================
+   NOTE DE TRANSMISSION — Fichier terminal
+   --------------------------------------------------------------------------
+   Cette feuille centralise les styles appliqués au fichier p-adieu du mémorial.
+   Comme son nom l'indique, elle est censée exprimer un "adieu" à nos lectrices et lecteurs. 
+   Nous considérons cette formule de salutation dans toutes ses acceptions et, aussi bien, 
+   un "au revoir" signifié dans le cadre ultime du projet. Il s'agit alors d'une invitation à revenir 
+   à la page p-champ-martyrs, à la fois accueil et mise en perspective.
+
+   Cette note atteste de la clôture de l'ensemble,
+   et prépare la modeste transmission pour les mainteneurs futurs.
+   ==========================================================================
+*/
+
+
+/* ======================================== */
+/* STYLES SPÉCIFIQUES A LA PAGE D'ADIEU */
+/* ======================================== */
+
+        body{
+            
+            
+            background-color: #E8DAEF;
+            
+            }
+
+         h1, h2 {
+            font-family: 'Georgia', serif;
+            letter-spacing: 1px;
+            color: #4A235A; /* violet profond */
+            }
+
+        h3 {
+            
+            color: white;
+            font-size: 25px;
+            font-variant-caps: all-small-caps;
+        }
+
+
+        .titre-page {
+            text-align: center;
+            margin-top: 2em;
+            margin-bottom: 1em;
+            font-size: 50px;
+            }
+
+        .intro-page {
+
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+            margin: auto;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            width: 800px;
+            max-width: 800px;
+            height: auto;
+            text-align: justify;           
+            font-style: italic;
+            font-size:12px;
+            padding: 20px;
+            background-color: #D7BDE2;
+            border-left: 5px double #7D3C98;
+            border-radius: 25px;
+            color: #4A235A;
+            }
+
+            .intro-page .droit {
+             font-style: normal;
+            }
+
+
+        .chili {
+
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            margin: 80px auto;
+            z-index: 0;
+                }
+
+        .conclusion {
+
+            position: absolute;
+            font-size: 20px;
+            letter-spacing: 2px;
+            top: 195%;
+            left: 30%;
+            color: white;
+            z-index: 1;
+        }
+
+        .bouton-suivant {
+            width: 100%;
+            text-align: center;
+            margin: 40px 20px 20px 0;
+        }
+
+        .bouton-suivant a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 16px 32px;
+        font-size: 1.4em;
+        font-weight: bold;
+        font-family: 'Georgia', serif;
+        border-radius: 12px;
+        background-color: #5DADE2; /* bleu affirmé */
+        color: white;
+        border: none;
+        box-shadow: 0 0 10px rgba(93, 173, 226, 0.6); /* halo bleu doux */
+        transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        }
+
+        .bouton-suivant a:hover {
+        background-color: #3498DB; /* bleu profond au survol */
+        transform: scale(1.07);
+        box-shadow: 0 0 14px rgba(52, 152, 219, 0.8); /* halo renforcé */
+        }

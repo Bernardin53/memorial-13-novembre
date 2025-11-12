@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Donner la parole aux vivants</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #fdf6e3;
+      font-family: 'Georgia', serif;
+      overflow: hidden;
+    }
+    h1 {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.8em;
+      background: rgba(255,255,255,0.95);
+      padding: 10px 20px;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .temoignage {
+  position: absolute;
+  width: 250px;
+  padding: 15px;
+  background: rgba(255,255,255,0.85);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  transform: rotate(var(--angle));
+  left: var(--x);
+  top: var(--y);
+  animation: chute 1s ease-out;
+}
+
+   
+    .source {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 10px;
+    }
+    @keyframes chute {
+      from { opacity: 0; transform: translateY(-50px) rotate(var(--angle)); }
+      to { opacity: 1; transform: rotate(var(--angle)); }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Donner la parole aux vivants, c’est aussi honorer les morts</h1>
+
+<script>
+  const temoignages = [
+    {
+      texte: "« Mon fils Matthieu est mort dans la musique »",
+      source: "France info, Maman de Matthieu de Rorthais, 3 novembre 2025"
+    },
+    {
+      texte: "« Je lui réponds : Tu te tais, on va survivre, tu bouges pas. »",
+      source: "Netflix, documentaire original, Une rescapée, I, novembre 2025"
+    },
+    {
+      texte: "« Vous imaginez ? La vie de ces gens qui bascule !...»",
+      source: "Netflix, documentaire original, Un policier, I, novembre 2025"
+    },
+    {
+      texte: "« Je me suis longtemps appitoyée sur mon sort et je me dis qu'il y a des gens qui y sont restés. »",
+      source: "Netflix, documentaire original, Une rescapée, I, novembre 2025"
+    },
+    {
+      texte: "« Tu veux ne plus voir ces images, ne plus avoir ces souvenirs mais en même temps il ne faut pas oublier ça ! Jamais ! »",
+      source: "Netflix, documentaire original, Une rescapée, I, novembre 2025"
+    },
+    {
+      texte: "« Je me suis longtemps apitoyée sur mon sort et je me dis qu'il y a des gens qui y sont restés. »",
+      source: "Netflix, documentaire original, Une rescapée, I, novembre 2025"
+    },
+    {
+      texte: "« Je sais ce que c'est de nourir l'autre de soi, d'amour, de compassion, de gentillesse, d'humanité ; à la fin c'est toujours l'amour qui gagne. »",
+      source: "Netflix, documentaire original, Une rescapée ?, I, novembre 2025"
+    },
+    {
+      texte: "« Ils ont rampé dans le sang de leurs amis pour sortir du bar. »",
+      source: "YouTube, FranceTV, Un secouriste, 2016"
+    },
+    {
+      texte: "« Ils ont rampé dans le sang de leurs amis pour sortir du bar. »",
+      source: "YouTube, FranceTV, Un secouriste, 2016"
+    },
+
+    {
+      texte: "« Ils ont rampé dans le sang de leurs amis pour sortir du bar. »",
+      source: "YouTube, FranceTV, Un secouriste, 2016"
+    },
+    {
+      texte: "« Ils ont rampé dans le sang de leurs amis pour sortir du bar. »",
+      source: "YouTube, FranceTV, Un secouriste, 2016"
+    },
+    {
+      texte: "« Ils ont rampé dans le sang de leurs amis pour sortir du bar. »",
+      source: "YouTube, FranceTV, Un secouriste, 2016"
+    },
+    {
+      texte: "« Ils ont rampé dans le sang de leurs amis pour sortir du bar. »",
+      source: "YouTube, FranceTV, Un secouriste, 2016"
+    },
+    {
+      texte: "« Ils ont rampé dans le sang de leurs amis pour sortir du bar. »",
+      source: "YouTube, FranceTV, Un secouriste, 2016"
+    },
+    {
+      texte: "« Ils ont rampé dans le sang de leurs amis pour sortir du bar. »",
+      source: "YouTube, FranceTV, Un secouriste, 2016"
+    },
+    {
+      texte: "« Ils ont rampé dans le sang de leurs amis pour sortir du bar. »",
+      source: "YouTube, FranceTV, Un secouriste, 2016"
+    },
+    {
+      texte: "« Ils ont rampé dans le sang de leurs amis pour sortir du bar. »",
+      source: "YouTube, FranceTV, Un secouriste, 2016"
+    },
+    {
+      texte: "« Ils ont rampé dans le sang de leurs amis pour sortir du bar. »",
+      source: "YouTube, FranceTV, Un secouriste, 2016"
+    },
+  ];
+
+  // Mélange aléatoire
+  temoignages.sort(() => Math.random() - 0.5);
+
+  const positions = [];
+
+  function isOverlapping(x, y, w, h) {
+    for (let pos of positions) {
+      const overlapX = Math.abs(pos.x - x) < w;
+      const overlapY = Math.abs(pos.y - y) < h;
+      if (overlapX && overlapY) return true;
+    }
+    return false;
+  }
+
+  for (let t of temoignages) {
+    const div = document.createElement('div');
+    div.className = 'temoignage';
+    div.innerHTML = `<p>${t.texte}</p><div class="source">— ${t.source}</div>`;
+
+    // Trouver une position non chevauchante
+    let x, y;
+    do {
+      x = Math.random() * (window.innerWidth - 250);
+     const topOffset = 100; // espace réservé sous le titre
+y = topOffset + Math.random() * (window.innerHeight - topOffset - 150);
+    } while (isOverlapping(x, y, 250, 150));
+
+    positions.push({ x, y });
+
+    const angle = (Math.random() * 60 - 30) + 'deg';
+    div.style.setProperty('--x', x + 'px');
+    div.style.setProperty('--y', y + 'px');
+    div.style.setProperty('--angle', angle);
+
+    document.body.appendChild(div);
+  }
+
+  const styles = [
+  'dashed', 'none', 'solid', 'double'
+];
+const borderStyle = styles[Math.floor(Math.random() * styles.length)];
+div.style.borderStyle = borderStyle;
+
+</script>
+
+
+
+</body>
+</html>
+
+
+

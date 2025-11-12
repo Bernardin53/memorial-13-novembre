@@ -1,0 +1,226 @@
+ 
+/* ==========================================================================
+   NOTE DE TRANSMISSION — Pages l-autres.html l-autres-13-novembre.css
+   --------------------------------------------------------------------------
+   Cette page recense les noms, prénoms et âge de toutes les victimes tombées
+   en martyrs du terrorisme islamiques le vendredi 13 novembre 2015 autre part
+   qu'au Bataclan.
+
+   Il s'agit du Stade de France, des terrasses de "la belle équipe, "la bonne bière",
+   "la Cosa nostra", "le carillon", le "petit Cambodge", "le comptoir Voltaire"
+   ainsi que de leurs abords immédiats.
+
+   Chacune des cellules appelle un fichier complet référencé v- dont nous reparlerons. 
+   
+   Théoriquement, les ornements et les citations ouvrent sur la 
+   cible n-notes.htlm (voir les pages p-referencements-URLs et n-notes.html). 
+
+   ==========================================================================
+*/
+
+/* ==========================================================================
+   NOTE TECHNIQUE
+   --------------------------------------------------------------------------
+  L'identité de chacune des victimes est présentée dans une cellule d'un tableau.
+
+  Ce tableau contient un certain nombre de textes encadrés et de dessins symboliques
+  qui appellent n-notes.html correspondantes.
+
+  Notre principale difficulté a consisté à trouver les bonnes techniques et méthodes
+  pour bien positionner les illustrations à l'intérieur du tableau. Nous avons mieux 
+  réussi que pour les victimes du Bataclan. 
+  
+   ==========================================================================
+*/
+
+/* ================================================= */
+/* STYLES SPÉCIFIQUES A LA PAGE VICTIMES DU BATACLAN */
+/* ================================================= */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px;
+  max-width: 90%;
+}
+
+h1, h2 {
+  color: black;
+  text-align: center;
+}
+
+/* Grille mémorielle */
+.grille {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 3px;
+  
+}
+
+.ligne {
+  display: grid;
+  grid-template-columns: repeat(7, 130px); /* ou la largeur que tu utilises */
+  gap: 10px;
+  justify-content: center; 
+  border-collapse: separate;
+  border-spacing: 15px; /* Adds vertical spacing between rows */
+}
+
+
+
+.cellule {
+  width: 130px;
+  height: 130px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: yellow; */ /* déjà supprimé */
+  
+}
+
+
+  .player-info {
+    background-color: rgba(104, 97, 105, 1.0);
+  }
+  .verse {
+    font-family: 'Great Vibes', cursive;
+    color: rgba(31, 38, 118, 0.7);
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center; /* Centrer le texte si nécessaire */
+  }
+
+/* === STYLES GÉNÉRIQUES POUR TOUS LES LIENS === */
+a {
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* === STYLES PAR DÉFAUT === */
+a:link,
+a:visited {
+  background-color: #ccc;
+  color: black;
+}
+
+a:hover,
+a:active {
+  background-color: black;
+  color: white;
+}
+
+/* === STYLES MÉMORIELS PAR CLASSE === */
+
+/* Classe .un — gris clair, rouge/black/white */
+
+a.un:link,
+a.un:visited {
+  background-color: rgba(221, 221, 221, 1);
+  color: red;
+  padding: 10px 20px;
+}
+
+a.un:hover,
+a.un:active {
+  background-color: rgba(175, 43, 30, 1);
+  color: white;
+}
+
+/* Classe .deux — gris clair, rouge/black/white */
+
+a.deux {
+  background-color: rgba(130, 141, 163, 1);
+  color: yellow;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a.deux:hover {
+  background-color: rgba(104, 97, 105, 1);
+}
+
+a.deux:active {
+  background-color: rgba(246, 251, 255, 1);
+}
+
+
+/* Classe .trois — ocre, jaune */
+
+a.trois:link,
+a.trois:visited {
+  background-color: rgba(220, 165, 64, 1);
+  color: yellow;
+  text-decoration: none;
+}
+a.trois:hover,
+a.trois:active {
+  background-color: rgba(130, 141, 163, 1);
+  text-decoration: none;
+}
+
+/* Classe .quatre — bordeaux, jaune */
+
+a.quatre:link,
+a.quatre:visited {
+  background-color: rgba(97, 41, 42, 1);
+  color: yellow;
+  text-decoration: none;
+}
+a.quatre:hover,
+a.quatre:active {
+  background-color: rgba(130, 141, 163, 1);
+  text-decoration: none;
+}
+
+/* Classe .cinq — brun, jaune */
+
+a.cinq:link,
+a.cinq:visited {
+  background-color: rgba(161, 95, 55, 1);
+  color: yellow;
+  text-decoration: none;
+}
+a.cinq:hover,
+a.cinq:active {
+  background-color: rgba(130, 141, 163, 1);
+  text-decoration: none;
+}
+
+/* Classe .six — beige, rouge/jaune */
+a.six:link {
+  background-color: rgba(208, 199, 190, 1);
+  color: red;
+  text-decoration: none;
+}
+a.six:visited {
+  background-color: rgba(208, 199, 190, 1);
+  color: yellow;
+  text-decoration: none;
+}
+a.six:hover,
+a.six:active {
+  background-color: rgba(130, 141, 163, 1);
+  text-decoration: none;
+}
+
+
+
+
+
+
+    
+
+
+
+  
