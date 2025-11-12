@@ -1,0 +1,162 @@
+
+
+
+/* ======================================== */
+/* STYLES SPÉCIFIQUES AUX PAGES VICTIMES (v-)    */
+/* ======================================== */
+
+            body {
+            font-family: Arial, sans-serif;
+            background-color: #FCF3CF;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; }
+
+        .titre-identite {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px; /* espace entre nom et drapeau */
+            text-align: center;
+            font-size: 2em;
+            margin: 2em 0;
+                }
+
+        .nom-identite {
+            font-weight: bold;
+                }
+
+        .image-gauche {
+            float: left;
+            margin: 30px 50px 30px 30px; /* Augmenter la marge à droite et maintient l'espace avec le texte */
+            max-width: 100%;
+            height: auto;
+            width: 500px;
+            height: 500px;
+            object-fit: cover; /* Assure que l'image remplit bien le cadre sans étirement */
+            
+                    }
+        .citation {
+            position: absolute;
+            margin-left: 300px;
+            margin-right: 20px;
+            transform: translateX(-50%);
+            width: max-content; /* Pour ajuster la largeur au contenu */
+            padding: 10px;
+            color: #444; /* Un gris doux pour une discrétion élégante */
+            font-family: Playfair Display;
+            font-variant: small-caps;
+            font-style: italic;
+            font-size: 30px;
+                    }
+
+        .morale {
+            position: absolute;
+            margin-left: 300px;
+            margin-right: 20px;
+            transform: translateX(-50%);
+            width: max-content; /* Pour ajuster la largeur au contenu */
+            padding: 10px;
+            color: #444; /* Un gris doux pour une discrétion élégante */
+            font-family: garamond;
+            font-style: italic;
+            font-size: 30px;
+            background-color: transparent;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            border: none; /* Plus de cadre visible */
+                }
+
+        .morale:hover {
+            background-color: #c0c0c0; /* Plus affirmé, mais toujours doux */
+            color: #000;
+                }
+
+        .drapeau-svg {
+            height: 0.9em;
+            vertical-align: middle;
+            margin-left: 0.3em;
+            opacity: 0.85;
+                    }
+           
+           
+        .container {
+            display:flex;
+            align-items:center;
+            padding: 20px;
+                    }
+
+        .article
+                    {
+            font-family: Arial, sans-serif;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            font-size:18px;
+            display: flex;
+            align-items: center;/* Permet d'aligner verticalement l'image */
+            padding: 15px;
+            line-height: 1.2; /* Améliore la lisibilité */
+            max-width: 800px; /* Garde une largeur optimale sur écran large */
+            text-indent: 10px;
+            letter-spacing: 0.5px;
+            word-wrap: break-word;
+                        }
+
+                    
+        .texteinitial 
+                    {
+            border: 2px solid black;
+            border-radius: 12px;
+            padding: 1em 5em;
+            margin: 1em 6em;
+            background: #E6D3A3;
+            font-size: 15px;
+            text-align: justify;
+            box-shadow: 5px 5px 15px rgba(50, 50, 50, 0.5);
+                    }
+
+                    @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-gauche {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    .image-gauche {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .image-gauche {
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .image-gauche {
+        max-width: 50%;
+    }
+}
+
+/* Autres règles spécifiques à p-styles-v */
