@@ -1,164 +1,168 @@
-
-/* ==========================================================================
-   NOTE DE TRANSMISSION — Pages p-c-13-novembre.css c-hamel.html c-lamennais.html
-   c-cocteau.html et c-script.js
-   --------------------------------------------------------------------------
-   Ces pages -c ne sont ni hors-sujet ni hors-contexte. Elles éclairent en biais 
-   l'objet principal du site par l'exemple de trois personnalités importantes
-   à notre avis. 
-
-   Le choix du père Jacques Hamel, prêtre catholique assassiné lors d'un attentat
-   islamiste, n'a pas besoin d'une autre justification. Nous l'avons élu parrain
-   du site. 
-
-   Félicité de Lamennais a eu maille à partir avec sa hiérarchie dès la parution de
-   ses premiers ouvrages. Il se dira « traité publiquement comme un ennemi de la cause sainte ». 
-   Cette révolte, cette liberté le conduiront à la condamnation et à l'ostracisation. 
-
-   La présence de Jean Cocteau peut sembler plus surprenante en ce contexte. En réalité,
-   on verra tout au long de ce projet l'importance considérable accordée à la poésie. 
-   Plus anecdotique sans doute, le Théâtre des Ambassadeurs, lieu de création
-   des Enfants terribles, qui ressemble à s'y méprendre au Bataclan.
-
-
-   ==========================================================================
-*/
-
-/* ==========================================================================
-   NOTE TECHNIQUE
-   --------------------------------------------------------------------------
-  Nous avons choisi la présentation en 2 colonnes alternées, le texte en regard
-  de son illustration. 
-  Les couleurs sont différentes selon chacun des personnages. 
-  La fonction script <button class="enlarge-button" onclick="enlargeImage> a pu
-  longtemps poser problème mais elle apparaît utile pour permettre 
-  l'élargissement des photos. 
-
-   ==============================================================
-*/
-
-/* ======================================== */
-/* STYLES SPÉCIFIQUES AUX PAGES -C      */
-/* ======================================== */
-
-
-
-
-
 <!doctype html>
 <html lang="fr">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="p-13-novembre.css">
-    <link rel="stylesheet" href="p-c-13-novembre.css">
-    <script src="c-script-commun.js" defer></script>
-
-    <title>cocteau</title>   
-       
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="p-13-novembre.css">
+  <link rel="stylesheet" href="p-c-13-novembre.css">
+  <script src="c-script-commun.js" defer></script>
+  <title>Cocteau</title>
+</head>
 
 <body class="page-cocteau">
 
-    <!-- 🕊️ Titre de la page -->
+  <!-- 🕊️ Titre de la page -->
   <h1 class="titre-memorial">JEAN COCTEAU<br>poète et académicien</h1>
-    
 
-<div class="row">
-  <div class="column" style="background-color:#ABEBC6;">
-    <p>&nbsp;La présence de Jean Cocteau s'est imposée à moi grâce à un faisceau de convergences. Il m'a semblé évident que le théâtre des Ambassadeurs et le Bataclan présentaient de nombreuses similitudes.Les deux théâtres sont des lieux culturels emblématiques chargés d'histoire. Leur architecture, transformée, rénovée, s'adapte parfaitement aux tendances culturelles de leur époque. Ils ont su s'adapter à une multitude de spectacles&#8239;: café-concert, music-hall, jazz, rock, funk, zouk, rap, etc., restauration, expositions, théâtre, souvent à l'avant-garde au point de provoquer la colère des conservateurs intégristes de leur époque. Ainsi Cocteau, en 1938, fut déjà accusé par des extrémistes de corrompre la jeunesse avec sa pièce <i>Les Parents terribles</i> créée aux Ambassadeurs. C'était bien avant qu'en 2024 le &#8239;théâtre des Ambassadeurs&nbsp;» ne devienne le &#8239;théâtre de la Concorde&nbsp;», une dizaine d'années après que d'autres extrémistes ne provoquent un carnage au Bataclan. Laissons parler le poète Cocteau, lui qui affirmait que la poésie est une langue à part qui permet à tous les poètes du monde de se comprendre entre eux. N'hésitons pas, en tant qu'&#8239;ambassadeurs de la concorde&nbsp;», à nous inviter à la conversation.</p>
- </div></div>
-    
-
-
-<div class="row">
-  <div class="column" style="background-color:#58D68D;">
-    <div class="image-container" style="position: absolute; ">
-        <figure>                                               
-            <img src="ph-cocteau-ambassadeurs.jpg" alt="Théâtre des Ambassadeurs" onclick="enlargeImage(this)" style="display: block; margin:0 auto; width: 314px; height:240px;">
-            <button class="enlarge-button" onclick="enlargeImage(this.parentElement.querySelector('img'))">¤</button>
-                <figcaption>   
-                <b>Le théâtre des Ambassadeurs<br>Espace Pierre Cardin puis théâtre de la Concorde</b>
-                </figcaption>
-        </figure>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-    <div class="column" style="background-color:#58D68D;">
-        <div class="image-container" style="position: relative;">
-
-    <figure>                                               
-    <img src="ph-cocteau-blood.jpg" alt="Blood of a Poet" onclick="enlargeImage(this)" style="display: block; margin:0 auto; width: 220px; height:310px; ">
-    <button class="enlarge-button" onclick="enlargeImage(this.parentElement.querySelector('img'))">¤</button>
-    <figcaption> 
-    <b><i>Blood of a Poet</i><br>Film réalisé par Cocteau en 1932</b>
-    </figcaption>
-        </figure>
-    </div></div></div>
-
-        
-
-<div class="row">
-        <div class="column" style="background-color:#ABEBC6; font-family: Garamond, sans-serif;line-height: 1.5em;">
-    <p class="p1">Ce qui ne peut se dire (et cependant<br>que ne puis-je dire avec<br>ma façon de forcer les mots<br>à se taire) ce qui ne peut<br>se dire c'est le miel<br>des abeilles à l'agonie. Il<br> coule de la rûche il ligote<br>d'une infecte résille vertigineuse<br>les profils perdus à la base<br>d'un caducée. On devine<br>fait de quoi.</p>
-  </div>
-  </div>
-
-
+  <!-- Bloc 1 : texte + image -->
   <div class="row">
-        <div class="column" style="background-color:#ABEBC6; font-family: Garamond, sans-serif;line-height: 1.5em;">
-  
-    <p class="p1">Cela déchira d'est en ouest<br>l'étoffe du silence. On entendit<br>le silence crier de telle<br>sorte que ce fut insupportable<br>aux oreilles du cœur. Une<br>gerbe d'encre à coup sûr<br>pleine de chefs-d'œuvre<br>éclaboussant un vol noir<br>de papiers compromettants brûlés en hâte.<br>Tandis qu'une pluie torrentielle<br>de baïonnettes<br>achevait sauvagement les victimes</p>
+    <div class="column" style="background-color:#ABEBC6;">
+      <p>
+        La présence de Jean Cocteau s'est imposée à moi grâce à un faisceau de convergences. 
+        Il m'a semblé évident que le théâtre des Ambassadeurs et le Bataclan présentaient de nombreuses similitudes. 
+        Les deux théâtres sont des lieux culturels emblématiques chargés d'histoire. Leur architecture, transformée, rénovée, 
+        s'adapte parfaitement aux tendances culturelles de leur époque. Ils ont su s'adapter à une multitude de spectacles : 
+        café-concert, music-hall, jazz, rock, funk, zouk, rap, etc., restauration, expositions, théâtre, souvent à l'avant-garde 
+        au point de provoquer la colère des conservateurs intégristes de leur époque. Ainsi Cocteau, en 1938, fut déjà accusé 
+        par des extrémistes de corrompre la jeunesse avec sa pièce <i>Les Parents terribles</i> créée aux Ambassadeurs. 
+        C'était bien avant qu'en 2024 le « théâtre des Ambassadeurs » ne devienne le « théâtre de la Concorde », 
+        une dizaine d'années après que d'autres extrémistes ne provoquent un carnage au Bataclan. 
+        Laissons parler le poète Cocteau, lui qui affirmait que la poésie est une langue à part qui permet à tous les poètes 
+        du monde de se comprendre entre eux. N'hésitons pas, en tant qu'« ambassadeurs de la concorde », à nous inviter à la conversation.
+      </p>
     </div>
-    </div>
-
-
-    <div class="row">
     <div class="column" style="background-color:#58D68D;">
-        <div class="image-container">
-
-            <figure>                                               
-    <img src="ph-cocteau-modigliani.jpg" alt="Portrait de Cocteau par Modigliani" onclick="enlargeImage(this)" style="display: block; margin:0 auto; width: 240px; height:280px;">
-    <button class="enlarge-button" onclick="enlargeImage(this.parentElement.querySelector('img'))">¤</button>
-    <figcaption>   
-    <b>Portrait de Cocteau<br>Amedeo Modigliani, 1916, Princetown</b>
-    </figcaption>
-        </figure>
-    </div></div></div>
-
-         
-        <div class="row">
-        <div class="column" style="background-color:#58D68D;">
-            <div class="image-container">
-
-                <figure>                                               
-    <img src="ph-cocteau-dessin.jpg" alt="Dessin de Jean Cocteau" onclick="enlargeImage(this)" style="display: block; margin:0 auto; width: 240px; height:300px;">
-    <button class="enlarge-button" onclick="enlargeImage(this.parentElement.querySelector('img'))">¤</button>
-    <figcaption>   
-    <b><i>Souvenir amical</i><br>Dessin de Jean Cocteau 1948</b>
-    </figcaption>
-        </figure>
-    </div></div></div>
-
-
-        <div class="row">
-        <div class="column" style="background-color:#ABEBC6;font-family: Garamond, sans-serif;line-height: 1.5em;">
-        
-    <p class="p1">A genoux à droite<br>et à gauche. Seul hélas<br>de mon espèce (il n'y a pas de quoi<br>être fier) sous une cotte<br>de mailles faite en chiffres sous<br>une armure de vacarme<br>seul à genoux à gauche<br>à droite &mdash; la neige aux mains d'aveugle<br>mettant la nappe &mdash; je ferme<br>à genoux seul de mon espèce<br>hélas dans cette chambre où le crime<br>eut lieu la bouche<br>jaune de ma savante<br>blessure capable<br>de prononcer quelques mots.Texte du paragraphe spécifique</p>
-
+      <figure>
+        <img src="ph-cocteau-ambassadeurs.jpg" alt="Théâtre des Ambassadeurs"
+             style="display:block; margin:0 auto; width:314px; height:240px;">
+        <button class="enlarge-button" onclick="enlargeImage(this.parentElement.querySelector('img'))">¤</button>
+        <figcaption>
+          <b>Le théâtre des Ambassadeurs<br>Espace Pierre Cardin puis théâtre de la Concorde</b>
+        </figcaption>
+      </figure>
     </div>
+  </div>
+
+  <!-- Bloc 2 : image + texte -->
+  <div class="row">
+    <div class="column" style="background-color:#58D68D;">
+      <figure>
+        <img src="ph-cocteau-blood.jpg" alt="Blood of a Poet"
+             style="display:block; margin:0 auto; width:220px; height:310px;">
+        <button class="enlarge-button" onclick="enlargeImage(this.parentElement.querySelector('img'))">¤</button>
+        <figcaption>
+          <b><i>Blood of a Poet</i><br>Film réalisé par Cocteau en 1932</b>
+        </figcaption>
+      </figure>
     </div>
+    <div class="column" style="background-color:#ABEBC6; font-family:Garamond, sans-serif; line-height:1.5em;">
+      <p class="p1">
+        Ce qui ne peut se dire (et cependant<br>
+        que ne puis-je dire avec<br>
+        ma façon de forcer les mots<br>
+        à se taire) ce qui ne peut<br>
+        se dire c'est le miel<br>
+        des abeilles à l'agonie. Il<br>
+        coule de la rûche il ligote<br>
+        d'une infecte résille vertigineuse<br>
+        les profils perdus à la base<br>
+        d'un caducée. On devine<br>
+        fait de quoi.
+      </p>
+    </div>
+  </div>
 
-<div class="container">
-        
-        <p class="textefin" style="background-color:#58D68D;">On ne résume pas les vers d'un poète. De ces trois strophes extraites de <i>La Crucifixion</i> (1946) il est aisé de déceler la part prophétique. Comme Rimbaud, le poète Cocteau se fait voyant. Il appréhende la réalité du martyre depuis le Golgotha jusqu'aux camps d'extermination nazis, proches du temps de l'écriture. La nature universelle de l'art poétique — partagée d'ailleurs avec la musique — permet de franchir les limites de la mémoire et d'englober dans ces visions des temps anciens la vérité de tous les martyres. Comment ne pas reconnaître la cruauté du 13 novembre dans &#8239;cette chambre où le crime eut lieu&nbsp;» et où &#8239;le silence insupportable a crié&nbsp;» — et continue de crier — &#8239;aux oreilles du cœur&nbsp;»&#8239;? Serai-je, moi aussi, &#8239;le seul de mon espèce&nbsp;» à tenter de dire mon effroi, mon dégoût, mais aussi mon empathie et ma volonté de résister à &#8239;la pluie torrentielle des baïonnettes&nbsp;», &#8239;sous cette armure de vacarme&nbsp;»&nbsp;? </p>
+  <!-- Bloc 3 : texte seul -->
+  <div class="row">
+    <div class="column" style="background-color:#ABEBC6; font-family:Garamond, sans-serif; line-height:1.5em;">
+      <p class="p1">
+        Cela déchira d'est en ouest<br>
+        l'étoffe du silence. On entendit<br>
+        le silence crier de telle<br>
+        sorte que ce fut insupportable<br>
+        aux oreilles du cœur. Une<br>
+        gerbe d'encre à coup sûr<br>
+        pleine de chefs-d'œuvre<br>
+        éclaboussant un vol noir<br>
+        de papiers compromettants brûlés en hâte.<br>
+        Tandis qu'une pluie torrentielle<br>
+        de baïonnettes<br>
+        achevait sauvagement les victimes
+      </p>
+    </div>
+    <div class="column" style="background-color:#58D68D;">
+      <!-- colonne vide pour garder la symétrie -->
+    </div>
+  </div>
 
-</div>
+  <!-- Bloc 4 : image + texte -->
+  <div class="row">
+    <div class="column" style="background-color:#58D68D;">
+      <figure>
+        <img src="ph-cocteau-modigliani.jpg" alt="Portrait de Cocteau par Modigliani"
+             style="display:block; margin:0 auto; width:240px; height:280px;">
+        <button class="enlarge-button" onclick="enlargeImage(this.parentElement.querySelector('img'))">¤</button>
+        <figcaption>
+          <b>Portrait de Cocteau<br>Amedeo Modigliani, 1916, Princeton</b>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="column" style="background-color:#ABEBC6; font-family:Garamond, sans-serif; line-height:1.5em;">
+      <p class="p1">
+        A genoux à droite<br>
+        et à gauche. Seul hélas<br>
+        de mon espèce (il n'y a pas de quoi<br>
+        être fier) sous une cotte<br>
+        de mailles faite en chiffres sous<br>
+        une armure de vacarme<br>
+        seul à genoux à gauche<br>
+        à droite — la neige aux mains d'aveugle<br>
+        mettant la nappe — je ferme<br>
+        à genoux seul de mon espèce<br>
+        hélas dans cette chambre où le crime<br>
+        eut lieu la bouche<br>
+        jaune de ma savante<br>
+        blessure capable<br>
+        de prononcer quelques mots.
+      </p>
+    </div>
+  </div>
 
-        <script src="c-script-commun.js" defer></script>
+  <!-- Bloc 5 : image seule -->
+  <div class="row">
+    <div class="column" style="background-color:#58D68D;">
+      <figure>
+        <img src="ph-cocteau-dessin.jpg" alt="Dessin de Jean Cocteau"
+             style="display:block; margin:0 auto; width:240px; height:300px;">
+        <button class="enlarge-button" onclick="enlargeImage(this.parentElement.querySelector('img'))">¤</button>
+        <figcaption>
+          <b><i>Souvenir amical</i><br>Dessin de Jean Cocteau 1948</b>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="column" style="background-color:#ABEBC6;">
+      <!-- colonne vide -->
+    </div>
+  </div>
+
+  <!-- Bloc final -->
+  <div class="container">
+    <p class="textefin" style="background-color:#58D68D;">
+      On ne résume pas les vers d'un poète. De ces trois strophes extraites de <i>La Crucifixion</i> (1946) 
+      il est aisé de déceler la part prophétique. Comme Rimbaud, le poète Cocteau se fait voyant. 
+      Il appréhende la réalité du martyre depuis le Golgotha jusqu'aux camps d'extermination nazis, proches du temps de l'écriture. 
+      La nature universelle de l'art poétique — partagée d'ailleurs avec la musique — permet de franchir les limites de la mémoire 
+      et d'englober dans ces visions des temps anciens la vérité de tous les martyres. Comment ne pas reconnaître la cruauté du 13 novembre 
+      dans « cette chambre où le crime eut lieu » et où « le silence insupportable a crié &nbsp;» — et continue de crier — &#8239;aux oreilles du cœur&nbsp;»&#8239;? Serai-je, moi aussi, &#8239;le seul de mon espèce&nbsp;» à tenter de dire mon effroi, mon dégoût, mais aussi mon empathie et ma volonté de résister à &#8239;la pluie torrentielle des baïonnettes&nbsp;», &#8239;sous cette armure de vacarme&nbsp;»&nbsp;? </p> </div> 
+
+      <script src="c-script-commun.js" defer></script> 
+
+  </body>
+
+   </html>
 
 
-</body>
-</html>
+
+
+
+
