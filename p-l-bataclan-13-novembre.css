@@ -1,37 +1,4 @@
  
-/* ==========================================================================
-   NOTE DE TRANSMISSION — Pages l-bataclan.html et p-l-bataclan-13-novembre.css
-   --------------------------------------------------------------------------
-   Cette page recense les noms, prénoms et âge de toutes les victimes tombées
-   en martyrs du terrorisme islamiques le vendredi 13 novembre 2015 au Bataclan.
-
-   Chacune des cellules appelle un fichier complet référencé v- dont nous reparlerons. 
-   
-   Théoriquement, les ornements prévus sur cette page-source ouvraient sur la 
-   cible n-notes.htlm (voir les pages p-referencements-URLs et n-notes.html). 
-
-   ==========================================================================
-*/
-
-/* ==========================================================================
-   NOTE TECHNIQUE
-   --------------------------------------------------------------------------
-  L'identité de chacune des victimes est présentée dans une cellule d'un tableau.
-  Notre objectif initial était d'illustrer ce tableau par l'insertion d'images, 
-  de textes encadrés et de dessins symboliques. Il s'agissait dans notre esprit
-  de renforcer notre hommage par une ornementation esthétique digne de nos ami(e)s.
-
-  Le fait est que nous avons échoué et nous en sommes terriblement désolé. 
-
-  Cette page présente donc un caractère inachevé dont nous ne sommes pas fier. 
-  Nous ne resterons pas sur cet échec et nous prenons l'engagement d'y revenir.  
-   ==========================================================================
-*/
-
-/* ================================================= */
-/* STYLES SPÉCIFIQUES A LA PAGE VICTIMES DU BATACLAN */
-/* ================================================= */
-
 
  body 
         {
@@ -56,8 +23,8 @@
 
 
 .grille {
-  display:grid;
-  grid-template-columns: repeat(9, 1fr);
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
   gap: 1em;
   row-gap:2em;
   width: 80%;
@@ -76,7 +43,7 @@
   text-align: center;
   border: 3px solid #8b0000; /* rouge sombre, très lisible */  
   border-radius: 10px;
-  padding: 10px 25px;
+  padding: 10px 15px;
   background-color: #fdf6e3; /* ton parchemin doux */
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15); /* ombre discrète */
   display: flex;
@@ -100,9 +67,96 @@
   height: 2em;
 }
 
+.torche {
+  position:absolute;
+  margin-left: 190px;
+  margin-top: 130px;
+  width: 80px;
+  height: 30px;
+}
+
+.torcheinverse {
+  position:absolute;
+  margin-left: 850px;
+  margin-top: 170px;
+  width: 80px;
+  height: 30px;
+}  
+
+.tau {
+  position: absolute;
+  margin-left: 405px;
+  margin-top: 40px;
+  width: 80px;
+  height: 75px;
+  transform: translateX(-35%)
+ }
 
 
 
+.croixoccitane1 {
+position: absolute;
+  margin-left: 330px;
+  margin-top: 915px;
+  width: 500px;
+  height: 500px;
+}
+
+.etoile {
+  position: absolute;
+  margin-left: 405px;
+  margin-top: 2500px;
+  width: 400px;
+  height: 400px;  
+}
+.boisdecerf {
+  position: absolute;
+  margin-left:200px;
+  margin-top: 860px;
+  width:100px;
+  height:445px;
+}
+
+
+.rectanglegauche {
+  position: absolute;
+  margin-left: 176px;
+  margin-top: 3690px;
+  width: 160px;
+  height: 480px;  
+}
+
+.rectanglecentre {
+  position: absolute;
+  margin-left: 501px;
+  margin-top: 3690px;
+  width: 160px;
+  height: 480px;  
+}
+
+.rectangledroite {
+  position: absolute;
+  margin-left: 824px;
+  margin-top: 3690px;
+  width: 160px;
+  height: 480px;  
+}
+
+.rectanglegauche img,
+.rectanglecentre img,
+.rectangledroite img {
+  width: 160px;
+  height: 480px; /* ou 480px si tu préfères garder cette hauteur */
+  object-fit: cover; /* pour éviter les déformations */
+}
+
+.colombe {
+  position: absolute;
+  margin-left: 77px;
+  margin-top: 4650px;
+  width: 500px;
+  height: 480px;
+}
 
 a:link, a:visited {
   background-color: #fdf6e3; /* ton parchemin doux */
@@ -128,13 +182,13 @@ a:hover, a:active {
 
 
 .albertini 
-  { grid-column: 1; grid-row: 1; transform: translateX(70%)}
+  { grid-column: 2; grid-row: 1; transform: translateX(70%)}
 .amiot
   { grid-column: 3; grid-row: 1; transform: translateX(70%)}   
 .bouffard
-  { grid-column: 9; grid-row: 1; transform: translateX(-65%)}
-.barreau
   { grid-column: 7; grid-row: 1; transform: translateX(-65%)}
+.barreau
+  { grid-column: 8; grid-row: 1; transform: translateX(-65%)}
 
   .alexander
   { grid-column: 2; grid-row: 2; transform: translateX(25%)}
@@ -155,15 +209,15 @@ a:hover, a:active {
   { grid-column: 8; grid-row: 3; transform: translateX(-35%)}
 
   .correia
-  { grid-column: 1; grid-row: 4; transform: translateX(60%) }
+  { grid-column: 2; grid-row: 4; transform: translateX(60%) }
   .delplace
-  { grid-column: 3; grid-row: 4; transform: translateX(-38%) }
+  { grid-column: 4; grid-row: 4; transform: translateX(-38%) }
   .deperreti
   { grid-column: 5; grid-row: 4; }
   .denuit
-  { grid-column: 7; grid-row: 4; transform: translateX(52%)}
+  { grid-column: 6; grid-row: 4; transform: translateX(52%)}
   .detoc
-  { grid-column: 9; grid-row: 4; transform: translateX(-52%)}
+  { grid-column: 8; grid-row: 4; transform: translateX(-52%)}
 
   .dogan
   { grid-column: 5; grid-row: 5; }
@@ -189,22 +243,22 @@ a:hover, a:active {
   { grid-column: 6; grid-row: 9; }
 
   .giroud
-  { grid-column: 1; grid-row: 10; }
+  { grid-column: 2; grid-row: 10; }
   .gomet
   { grid-column: 5; grid-row: 10; }
   .galisson
-  { grid-column: 9; grid-row: 10; }
+  { grid-column: 8; grid-row: 10; }
 
   .gonzales
-  { grid-column: 2; grid-row: 11; transform: translateX(-20%) }
-  .gregoire
   { grid-column: 3; grid-row: 11; transform: translateX(-20%) }
+  .gregoire
+  { grid-column: 4; grid-row: 11; transform: translateX(-20%) }
   .gomet
   { grid-column: 5; grid-row: 11; }
   .garrido
   { grid-column: 7; grid-row: 11; transform: translateX(20%) }
   .guyomardpy
-  { grid-column: 8; grid-row: 11; transform: translateX(20%) }
+  { grid-column: 6; grid-row: 11; transform: translateX(20%) }
 
   .guyomard
   { grid-column: 3; grid-row: 12; transform: translateX(53%) }
@@ -216,11 +270,13 @@ a:hover, a:active {
   { grid-column: 7; grid-row: 12; transform: translateX(-53%) }
 
   .henry
-  { grid-column: 4; grid-row: 13; }
+  { grid-column: 3; grid-row: 13; }
   .hoche
-  { grid-column: 5; grid-row: 13; }
-  .innocenti
+  { grid-column: 4; grid-row: 13; }
+  .houd
   { grid-column: 6; grid-row: 13; }
+  .innocenti
+  { grid-column: 7; grid-row: 13; }
 
   .jardin
   { grid-column: 4; grid-row: 14; }
@@ -256,11 +312,11 @@ a:hover, a:active {
   { grid-column: 7; grid-row: 18; }
 
   .merlin
-  { grid-column: 1; grid-row: 19; }
+  { grid-column: 2; grid-row: 19; }
   .minvielle
   { grid-column: 5; grid-row: 19; }
   .misse
-  { grid-column: 9; grid-row: 19; }
+  { grid-column: 8; grid-row: 19; }
 
   .mosser
   { grid-column: 3; grid-row: 20; }
@@ -286,13 +342,13 @@ a:hover, a:active {
   { grid-column: 6; grid-row: 22; }
 
   .prenat
-  { grid-column: 1; grid-row: 23; }
+  { grid-column: 2; grid-row: 23; }
   .prevost
   { grid-column: 4; grid-row: 23; }
   .pumir
   { grid-column: 6; grid-row: 23; }
   .rammant
-  { grid-column: 9; grid-row: 23; }
+  { grid-column: 8; grid-row: 23; }
 
   .ribet
   { grid-column: 2; grid-row: 24; }
@@ -337,6 +393,13 @@ a:hover, a:active {
 
   .zschoche
   { grid-column: 5; grid-row: 29; }
+
+  .dewilde
+  { grid-column: 4; grid-row: 30; }
+
+  .valette
+  { grid-column: 6; grid-row: 30; }
+  
 
 
 @media (max-width: 600px) {
